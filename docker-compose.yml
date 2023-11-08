@@ -25,4 +25,14 @@ services:
     command: setup
     ports:
     - 8888:3000
+  pathology_image_server:
+    tty: true
+    stdin_open: true
+    container_name: pathology_image_server
+    depends_on:
+      - "minio"
+      - "easypanel"
+    build:
+      context: .
+      dockerfile: Dockerfile
 version: '3'
