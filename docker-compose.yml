@@ -7,8 +7,8 @@ services:
     - ':9090'
     container_name: minio_latest
     environment:
-      '"MINIO_ROOT_USER': ROOTNAME"
-      '"MINIO_ROOT_PASSWORD': CHANGEME123"
+      MINIO_ROOT_USER: 'minioadmin'
+      MINIO_ROOT_PASSWORD: 'minioadmin'
     image: quay.io/minio/minio
     ports:
     - 9000:9000
@@ -32,9 +32,6 @@ services:
     depends_on:
       - "minio"
       - "easypanel"
-    environment:
-      MINIO_ROOT_USER: minioadmin
-      MINIO_ROOT_PASSWORD: minioadmin
     build:
       context: .
       dockerfile: Dockerfile

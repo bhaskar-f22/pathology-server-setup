@@ -23,3 +23,5 @@ vips dzsave $INPUT $OUTPUT --vips-concurrency=30 --vips-progress --suffix=".webp
 
 > Easypanel default urls
 >> http://127.0.0.1:3000
+
+docker-compose -f docker-compose.yml up --build --force-recreate
