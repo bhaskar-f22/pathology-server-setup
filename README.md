@@ -15,7 +15,10 @@ vips dzsave $INPUT $OUTPUT --vips-concurrency=30 --vips-progress --suffix=".webp
 >> minioadmin:minioadmin
 
 > Minio default urls
->> S3-API: http://172.21.0.3:9000  http://127.0.0.1:9000 
+
+>> S3-API: http://172.21.0.3:9000  http://127.0.0.1:9000
+
+
 >> Console: http://172.21.0.3:9090 http://127.0.0.1:9090 
 
 > Easypanel default urls
