@@ -35,4 +35,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    volumes: 
+      - images:/images
+volumes:
+  images:
+
 version: '3'
